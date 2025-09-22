@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url('/fonts/lemon_milk/LEMONMILK-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'LemonMilk', sans-serif; 
+    font-weight: bold;
+}
+ 
+ /* Estilos personalizados */
+ .sidebar {
+    height: 120vh;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: white;
+    background-color: #575757;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 16px;
+}
+.sidebar a:hover {
+    background-color: #343a40;
+}
+.logo img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -40px;
+}
+.content {
+    padding: 20px;
+}

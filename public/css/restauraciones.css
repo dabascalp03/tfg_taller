@@ -1,0 +1,248 @@
+/* CSS Adicional para Vistas Parciales */
+.detalles-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.detalles-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 🔹 Las imágenes ahora se ajustan mejor */
+.detalles-image {
+    width: 100%;
+    max-width: 350px; /* 🔹 Tamaño máximo */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 📌 Ajustes específicos para móviles */
+@media (max-width: 768px) {
+    .detalles-image {
+        max-width: 80%;
+    }
+    
+    .detalles-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .detalles-step {
+        width: 100%;
+    }
+}
+
+.detalles-content > div{
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detalles-title {
+    color: #ff8000;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* 📌 Ajustes específicos para móviles */
+@media (max-width: 768px) {
+    .detalles-image {
+        max-width: 80%; /* 🔹 Evita que sean demasiado grandes */
+    }
+}
+
+
+
+.detalles-step {
+    border-left: 4px solid #ff8000;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.detalles-step:hover {
+    background-color: #fff7e6;
+}
+
+.detalles-step h3 {
+    margin-top: 0;
+    color: #ff8000;
+}
+
+.detalles-step p {
+    margin-bottom: 0;
+}
+
+.btn-volver {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-volver:hover {
+    background-color: #ff5700;
+}
+
+
+.restauraciones-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.restauraciones-header h1, .restauraciones-header p {
+    position: relative;
+    z-index: 2;
+}
+
+/* Tarjetas de las restauraciones */
+.restauracion-card {
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Asegura que los elementos internos estén distribuidos */
+height: 100%; /* Iguala la altura de todas las tarjetas */
+max-height: 500px !important; /* Ajusta según tu diseño */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease;
+}
+
+.restauracion-card:hover {
+transform: translateY(-10px);
+}
+
+.card-body {
+flex-grow: 1; /* El contenido del cuerpo se adapta al espacio disponible */
+padding: 20px;
+}
+
+.card-footer {
+text-align: center;
+}
+
+
+.restauracion-image {
+    border-radius: 10px 10px 0 0;
+}
+
+.restauracion-body {
+    padding: 20px;
+}
+
+.restauracion-title {
+    color: #ff8000;
+    margin-bottom: 10px;
+}
+
+.btn-ver-mas {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px !important;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.restauracion-image img {
+width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+height: 100%; /* La imagen ocupa toda la altura del contenedor */
+object-fit: cover; /* Recorta la imagen manteniendo la proporción */
+aspect-ratio: 1 / 1; /* Asegura que la imagen sea un cuadrado */
+border-radius: 10px; /* Opcional: Añade esquinas redondeadas */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombreados opcionales */
+}
+
+
+.btn-ver-mas:hover {
+    background-color: #ff5700;
+}
+
+/* Estilos adicionales para imágenes extra */
+.extra-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.extra-image-section {
+    margin-bottom: 40px;
+}
+
+#btnEnviar {
+    background-color: #ff8000;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#btnEnviar:hover {
+    background-color: #ff5700;
+}
+
+button.like-btn {
+border: none; /* Elimina el borde */
+outline: none; /* Elimina el contorno */
+background: transparent; /* Asegura que el fondo sea transparente */
+padding: 0; /* Elimina cualquier relleno */
+}
+
+button.like-btn i {
+transition: transform 0.2s ease, color 0.2s ease;
+}
+
+button.like-btn:hover i {
+transform: scale(1.2); /* Hace que el corazón crezca ligeramente al pasar el mouse */
+}
+
+
+    button .far.fa-heart:hover {
+        transform: scale(1.2); /* Hace que el corazón crezca ligeramente al pasar el mouse */
+    }
+
+    .restauracion-card .card-header {
+        background-color: #f8f9fa; /* Color de fondo del encabezado de la tarjeta */
+        border-bottom: 1px solid #e9ecef; /* Línea inferior del encabezado */
+        font-weight: bold; /* Negrita para el título */
+    }
+
+    .restauracion-card .card-body {
+        background-color: #ffffff; /* Color de fondo del cuerpo de la tarjeta */
+    }

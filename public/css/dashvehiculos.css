@@ -1,0 +1,59 @@
+.card img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ver-mas-btn {
+    background-color: #ff8000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mas-btn:hover {
+    background-color: #ff5700;
+}
+
+.card-header {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.card-body {
+    background-color: #ffffff;
+}
+
+.mt-4 h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* CSS */
+.floating-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #4CAF50; /* Color verde moderno */
+color: white;
+padding: 15px 20px;
+border-radius: 50px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+cursor: pointer;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-button:hover {
+transform: scale(1.1);
+box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+a {
+text-decoration: none;
+color: white;
+}
