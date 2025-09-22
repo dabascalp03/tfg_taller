@@ -21,3 +21,9 @@ Permite administrar clientes, productos, servicios y generar presupuestos/factur
 - Generación de presupuestos y facturas  
 - Panel de administración con autenticación  
 - Visualización de reportes y estadísticas  
+
+---
+
+## Base de Datos
+
+- Incluida en el archivo **todomotor.sql** dentro de la propia carpeta del proyecto.
